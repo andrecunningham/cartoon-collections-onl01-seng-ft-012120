@@ -1,5 +1,10 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves describe 'Cartoon Collections' do
+  describe '#roll_call_dwarves' do
+    it 'prints out the 7 dwarfs in a numbered list' do
+      dwarves = %w[Dopey Grumpy Bashful]
+
+      output = capture_stdout do
+        roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet# code an argument here
